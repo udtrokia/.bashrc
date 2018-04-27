@@ -3,7 +3,8 @@
 #export peer='QmXyQGyi5zQcHpaJNAEVG2y4bzNpK9uNbZKfuHVQQoohT2'
 
 # PS1
-PS1='\033[36m ℷ\033[0m '
+# PS1='\033[36m ℷ\033[0m '
+PS1=' ℷ '
 
 # env
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
@@ -21,6 +22,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias e="emacs"
+alias ss="scheme"
 alias rb="ruby"
 alias cl="clisp"
 alias py="python3 -m"
