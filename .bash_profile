@@ -10,7 +10,7 @@ PS1=' ℷ '
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
 # path
-export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/bin:$PATH:/usr/local/Homebrew/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/go/bin
 export GOPATH=$HOME/go
@@ -32,4 +32,5 @@ alias pj="phantomjs"
 alias blog="cd $HOME/code/blog/_posts"
 
 
-
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/usr/local/opt/node@8/bin:$PATH"
