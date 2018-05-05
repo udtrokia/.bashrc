@@ -1,0 +1,10 @@
+*
+!.bashrc
+!.bash_profile
+!.bash_history
+!.bash_sessions
+!.env
+!.zshrc
+!.tmux.conf
+!.nix-profile
+!.gitignore
