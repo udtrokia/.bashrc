@@ -31,6 +31,9 @@ alias pj="phantomjs"
 
 alias blog="cd $HOME/code/blog/_posts"
 
-
+# path
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/usr/local/opt/node@8/bin:$PATH"
+
+# color
+export TERM="xterm-256color"
