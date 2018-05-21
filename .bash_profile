@@ -14,7 +14,7 @@ export PATH=/usr/local/bin:$PATH:/usr/local/Homebrew/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/go/bin
 export GOPATH=$HOME/go
-export GOBIN=$HOME/go/bin
+# export GOBIN=$HOME/go/bin
 
 # cmd
 alias ll='ls -alF'
@@ -37,3 +37,17 @@ export PATH="/usr/local/opt/node@8/bin:$PATH"
 
 # color
 export TERM="xterm-256color"
+
+# proxy
+function proxy_off(){
+    unset http_proxy
+    unset https_proxy
+    echo -e "已关闭代理"
+}
+
+function proxy_on() {
+    export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+    export http_proxy="http://127.0.0.1:8118"
+    export https_proxy=$http_proxy
+    echo -e "已开启代理"
+}
