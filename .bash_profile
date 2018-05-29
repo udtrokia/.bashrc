@@ -22,7 +22,7 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias e="emacs"
-alias ss="scheme"
+alias ss="scheme --script"
 alias rb="ruby"
 alias cl="clisp"
 alias py="python3 -m"
@@ -51,3 +51,4 @@ function proxy_on() {
     export https_proxy=$http_proxy
     echo -e "已开启代理"
 }
+export GPG_TTY=$(tty)
