@@ -1,8 +1,4 @@
 #ipfs
-#export hash='QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv'
-#export peer='QmXyQGyi5zQcHpaJNAEVG2y4bzNpK9uNbZKfuHVQQoohT2'
-
-# PS1
 # PS1='\033[36m ℷ\033[0m '
 PS1=' ℷ '
 
@@ -16,7 +12,7 @@ export PATH=/usr/local/bin:$PATH:/usr/local/Homebrew/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/go/bin
 export GOPATH=$HOME/go
-# export GOBIN=$HOME/go/bin
+export PATH=$PATH:/usr/local/share/flutter/bin
 
 # cmd
 alias ll='ls -alF'
@@ -24,7 +20,8 @@ alias la='ls -A'
 alias l='ls -CF'
 
 alias e="emacs"
-alias ss="scheme --script"
+alias chez="scheme --script"
+alias ss="scheme"
 alias rb="ruby"
 alias cl="clisp"
 alias py="python3 -m"
@@ -69,3 +66,5 @@ function git_proxy_off(){
     git config --global --unset https.proxy
     echo -e "git proxy off"
 }
+
+
