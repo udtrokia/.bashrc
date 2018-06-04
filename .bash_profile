@@ -1,18 +1,24 @@
-#ipfs
+#system
 # PS1='\033[36m ℷ\033[0m '
 PS1=' ℷ '
-
-# brew
-export GPG_TTY=$(tty)
-export PATH="/usr/local/sbin:$PATH"
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
 # path
 export PATH=/usr/local/bin:$PATH:/usr/local/Homebrew/bin
 export PATH=$PATH:$HOME/.local/bin
+## Go path
 export PATH=$PATH:$HOME/go/bin
 export GOPATH=$HOME/go
+## Brew path
+export GPG_TTY=$(tty)
+export PATH="/usr/local/sbin:$PATH"
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+## Cargo path
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/usr/local/opt/node@8/bin:$PATH"
+## Flutter path
 export PATH=$PATH:/usr/local/share/flutter/bin
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 # cmd
 alias ll='ls -alF'
@@ -30,9 +36,7 @@ alias pj="phantomjs"
 
 alias blog="cd $HOME/code/blog/_posts"
 
-# path
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="/usr/local/opt/node@8/bin:$PATH"
+
 
 # color
 export TERM="xterm-256color"
