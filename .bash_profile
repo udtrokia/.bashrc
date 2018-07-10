@@ -71,4 +71,14 @@ function git_proxy_off(){
     echo -e "git proxy off"
 }
 
+# emsdk
+PATH=$PATH:/usr/local/share/emsdk
+PATH=$PATH:/usr/local/share/emsdk/clang/e1.38.6_64bit
+PATH=$PATH/usr/local/share/emsdk/node/8.9.1_64bit/bin
+PATH=$PATH:/usr/local/share/emsdk/emscripten/1.38.6
 
+## Setting environment variables:
+EMSDK=/usr/local/share/emsdk
+EM_CONFIG=/Users/mercury/.emscripten
+BINARYEN_ROOT=/usr/local/share/emsdk/clang/e1.38.6_64bit/binaryen
+EMSCRIPTEN=/usr/local/share/emsdk/emscripten/1.38.6
