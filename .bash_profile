@@ -19,6 +19,9 @@ export PATH="/usr/local/opt/node@8/bin:$PATH"
 export PATH=$PATH:/usr/local/share/flutter/bin
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+## WASM SDK PATH
+export PATH=$PATH:/usr/local/Cellar/wabt/bin
+
 
 # cmd
 alias ll='ls -alF'
