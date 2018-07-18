@@ -22,7 +22,8 @@ export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 ## WASM SDK PATH
 export PATH=$PATH:/usr/local/Cellar/wabt/bin
 
-
+## iOS simulator
+alias sim="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/"
 # cmd
 alias ll='ls -alF'
 alias la='ls -A'
