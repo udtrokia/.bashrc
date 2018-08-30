@@ -5,25 +5,34 @@ PS1=' ℷ '
 # path
 export PATH=/usr/local/bin:$PATH:/usr/local/Homebrew/bin
 export PATH=$PATH:$HOME/.local/bin
+
+## Git path
+export PATH=/usr/local/bin/git:$PATH
+
 ## Go path
 export PATH=$PATH:$HOME/go/bin
 export GOPATH=$HOME/go
+
 ## Brew path
 export GPG_TTY=$(tty)
 export PATH="/usr/local/sbin:$PATH"
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
+
 ## Cargo path
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/usr/local/opt/node@8/bin:$PATH"
+
 ## Flutter path
 export PATH=$PATH:/usr/local/share/flutter/bin
 export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+
 ## WASM SDK PATH
 export PATH=$PATH:/usr/local/Cellar/wabt/bin
 
 ## iOS simulator
 alias sim="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/"
+
 # cmd
 alias ll='ls -alF'
 alias la='ls -A'
@@ -40,7 +49,7 @@ alias pj="phantomjs"
 
 alias blog="cd $HOME/code/blog/_posts"
 
-
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
 
 # color
 export TERM="xterm-256color"
